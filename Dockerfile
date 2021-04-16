@@ -9,3 +9,5 @@ WORKDIR /root_config
 COPY package.json yarn.lock ./
 
 RUN yarn install --silent
+
+COPY . .  
